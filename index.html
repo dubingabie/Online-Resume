@@ -1,106 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>My Resume</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriel Dubin - Resume</title>
+    <link href='https://fonts.googleapis.com/css?family=Caveat' rel='stylesheet'>
+    <link rel="stylesheet" href="resume-styles.css">
+</head>
+<body>
+    <header>
+        <h1 id="name">Gabriel Dubin</h1>
+        <p>Teaching Assistant and Student at The Hebrew University of Jerusalem</p>
+        <p><a href="https://www.linkedin.com/in/gabrieldubin">www.linkedin.com/in/gabrieldubin</a></p>
+        <p><a href="https://github.com/dubingabie">github.com/dubingabie</a></p>
+        <p>gaberiel.dubin@mail.huji.ac.il</p>
+        <p>0556688090</p>
+    </header>
 
-    <body>
-        <h1>Gabriel Dubin</h1>
-        <h2> Teaching Assistant and Student at The Hebrew 
-            University of Jerusalem</h2>
-        <ul>
-            <li>gaberiel.dubin@mail.huji.ac.il</li>
-            <li>0556688090</li>
-            <li><a href="https://www.linkedin.com/in/gabrieldubin">www.linkedin.com/in/gabrieldubin</a></li>
-            <li><a href="https://github.com/dubingabie">github.com/dubingabie</a></li>
-        </ul>
-        <hr />
-        <h2>Summary</h2>
-        <p>
-            Dedicated computer science student with a strong foundation in programming languages, algorithms, 
-            and data structures. Excellent team player who thrives in collaborative environments, contributing 
-            effectively to group projects. Combines technical expertise with strong communication skills to foster 
-            productive teamwork. Eager to apply theoretical knowledge and collaborative abilities to real-world 
-            problems, contributing to innovative software solutions. Quick learner with excellent analytical and 
-            problem-solving skills.
-        </p>
-        <hr /> 
-        <h2>Education</h2>
-        <ul>
-            <li>The Hebrew University of Jerusalem - Israel<br />
-                Computer Science -B.SC -2021-Pressent 3 Semesters Left <br />
-                Selected Courses And Grades:
-                <ul>
-                    <li>Object Oriented Programming - 97</li>
-                    <li>C/C++ - 96</li>
-                    <li>Operating Systems - 90</li>
-                    <li>Cryptography And Software Security - 87</li>
-                    <li>Algortihms - 86</li>
-                    <li>Intro to Machine Learning - 85</li>
-                    <li>Data Sctructures - 84</li>      
-                    <li>Databasees</li>              
-                </ul>
-            </li>
-        </ul>
-        <hr />
-        <h2>Work Experience</h2>
-        <ul>
-            <li>Programming Teaching Unit of The Hebrew University of Jerusalem - Israel<br />
-                Python Programming Teaching Assitant
-                <ul>
-                  <li> Python programming and Algorithmic assistance for students                </li>
-                </ul>
-            </li>
-        </ul>
-        <hr />
+    <section id="profile">
+        <h2>Profile</h2>
+        <p>Dedicated computer science student with a strong foundation in programming languages, algorithms, and data structures. Excellent team player who thrives in collaborative environments, contributing effectively to group projects. Combines technical expertise with strong communication skills to foster productive teamwork. Eager to apply theoretical knowledge and collaborative abilities to real-world problems, contributing to innovative software solutions. Quick learner with excellent analytical and problem-solving skills.</p>
+    </section>
+
+    <section id="experience">
+        <h2>Professional Experience</h2>
+        <div class="experience-item">
+            <h3>Teaching Assistant</h3>
+            <p>2024 – present</p>
+            <p>Programming Teaching Unit of The Hebrew University of Jerusalem</p>
+            <p>Python programming and Algorithmic assistance for students</p>
+        </div>
+    </section>
+
+    <section id="projects">
         <h2>Projects</h2>
-        <ul>
-            <li> User-Level Thread Library (C++)
-                <ul>
-                    <li> Developed a thread scheduler utilizing the round-robin algorithm. </li>
-                    <li> Ensured fair resource usage and prevented starvation using quantum counters. </li>
-                    <li> Added functionality to block threads and implement sleep for a specified number of quanta.</li>
-                </ul>
-            </li>
-            <br />
-            <li>  Mock Google Search Engine (Python)
-                <ul>
-                    <li>  Developed a mock search engine using the PageRank algorithm. </li>
-                    <li> Utilized a dictionary to store and manage links to and from specific websites, used to rank links by relevance. </li>
-                </ul>
-            </li>
-            <br />
-            <li>   Bricker Game (Java)
-                <ul>
-                    <li> Implemeted a Bricker game which involves breaking rows of bricks by hitting a moving ball with a user controlled paddle </li>
-                    <li>  Usage of OOP core concepts such as Listeners, Strategies, The Open-Close Princple. </li>
-                </ul>
-            </li>
-        </ul>
-        <hr />
+        <div class="project">
+            <h3>User-Level Thread Library (C++)</h3>
+            <ul>
+                <li>Developed a thread scheduler utilizing the round-robin algorithm.</li>
+                <li>Ensured fair resource usage and prevented starvation using quantum counters.</li>
+                <li>Added functionality to block threads and implement sleep for a specified number of quanta.</li>
+            </ul>
+        </div>
+        <div class="project">
+            <h3>Mock Google Search Engine (Python)</h3>
+            <ul>
+                <li>Developed a mock search engine using the PageRank algorithm.</li>
+                <li>Utilized a dictionary to store and manage links to and from specific websites, used to rank links by relevance.</li>
+            </ul>
+        </div>
+        <div class="project">
+            <h3>Bricker Game (Java)</h3>
+            <ul>
+                <li>Implemented a Bricker game which involves breaking rows of bricks by hitting a moving ball with a user controlled paddle.</li>
+                <li>Usage of OOP core concepts such as Listeners, Strategies, The Open-Close Principle.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <div class="education-item">
+            <h3>Hebrew University Of Jerusalem</h3>
+            <p>2021 – present, Jerusalem, Israel</p>
+            <p>Computer Science - B.SC - 3 Semesters Left</p>
+            <p>Courses and Grades: Operating Systems - 90, Data Structures - 84, Algorithms - 86, OOP - 97, C/C++ - 96, Databases.</p>
+        </div>
+    </section>
+
+    <section id="skills">
         <h2>Skills</h2>
         <ul>
             <li>Python</li>
-            <li>C</li>
-            <li>C++</li>
+            <li>C/C++</li>
             <li>Java</li>
+            <li>C#</li>
             <li>SQL</li>
             <li>Databases</li>
             <li>Data Structures</li>
             <li>Algorithms</li>
-            <li>Full Stack Web Development</li>
+            <li>Linux</li>
         </ul>
-        <hr />
+    </section>
+
+    <section id="languages">
         <h2>Languages</h2>
-            <ul>
-                <li>Hebrew</li>
-                <li>Russain</li>
-                <li>English</li>
-            </ul>
-        <hr />
-    </body>
-    <footer>
-        <p>© 2024 Gabriel Dubin</p>
-    </footer>
+        <ul>
+            <li>Hebrew</li>
+            <li>Russian</li>
+            <li>English</li>
+        </ul>
+    </section>
+</body>
 </html>
